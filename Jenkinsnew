@@ -11,7 +11,7 @@ git branch: 'development', credentialsId: 'ab8ebb1c-0d75-494c-8c01-a4e57bf08121'
 stage('build'){
 
 sh "${mavenHome}/bin/mvn clean package"
-}/*
+}
 stage('sonarqube report'){
 sh "${mavenHome}/bin/mvn clean sonar:sonar"
 }
@@ -30,5 +30,5 @@ Regards
 Vineel
 ''', subject: 'build details', to: 'vineelcheedella@gmail.com'
 }
-}*/
+}
 }
